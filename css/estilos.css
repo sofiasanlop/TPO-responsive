@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+/* ¿INICIO QUIENES SOMOS? */
+.quienes_somos_img1{
+    height: 375px;
+    width: 550px;
+    display: flex;
+    float: right;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.quienes_somos p{
+    font-size: 20px;
+    font-family: 'Cantarell', sans-serif;
+    font-family: 'Sigmar', cursive;
+    text-align: justify;
+    
+}
+
+.parrafo1{
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.parrafo2{
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.quienes_somos_img2{
+    height: 375px;
+    width: 550px;
+    display: flex;
+    float: left;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+/*FOOTER */
+.footer{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100vw;    
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lista_footer a{
+    line-height: 40px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-links{
+    padding-top: 20px;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+}
+
+.social-link a:hover{
+    background-color: lightgrey;
+}

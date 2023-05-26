@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+    font-family: 'Cantarell', sans-serif;
+    font-family: 'Sigmar', cursive;
+    /* font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Vina Sans', cursive; */
+    height: 100vh;
+     }
+
+/* HEADER */
+.header{
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 5px;
+    overflow: hidden;
+}
+.header_h1{
+    text-align: left;
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.header_img{
+    height: 50%;
+    width: 50px;
+    display: flex;
+    float: left;
+    margin: 5px;
+}
+
+/* NAVBAR */
+
+nav{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: black;    
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    text-align: center;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    color: white;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+li a.active, li a:hover{
+    background: grey;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+  
+/* FORMULARIO */
+.grid_formulario{
+    display: grid;
+    min-height: 300px;
+    grid-template-columns: 60% 40%;
+    gap: 20px 10px;
+    align-content:space-between;
+    background-color: white;
+    
+}
+.formulario{
+    padding: 5px;
+    background-color: white;
+    margin: 3px;
+    border-radius: 5px;
+    border-style:ridge;
+      
+}
+
+.imagen_form{
+align-content: center;
+text-align: center;
+padding: 30px;
+}
+
+
+
+/*INDEX*/
+.item1 {grid-area: banner;}
+.item2 {grid-area: lanzaminentos;}
+.item3 {grid-area: imgul;}
+.item4 {grid-area: novedades;}
+.item5 {grid-area: imgn;}
+.item6 {grid-area: newsletter;}
+
+
+.grid-containerh {
+    display: grid;
+    grid-template-areas:
+    'banner'
+    'lanzaminentos'
+    'imgul'
+    'novedades'
+    'imgn'
+    'newsletter';
+    gap: 5px;
+    background-color: rgb(245, 242, 242);
+    text-align: center;
+}
+
+body {
+    margin:0;
+    /*padding:0*/
+  }
+
+.banner {
+    width: 100%;
+    height: 400px;
+}
+
+
+.item2 {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    font-family: 'Vina Sans', cursive;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+
+.item3 {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.imgul1 {
+    width: 620px;
+    height: 380px;
+}
+
+.imgul2 {
+    width: 620px;
+    height: 380px;
+}
+
+
+.item4 {
+    padding-top: 60px;
+    padding-bottom: 0px;
+    font-family: 'Vina Sans', cursive;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+
+.imgn1 {
+    width: 340px;
+    height: 420px; 
+}
+
+.imgn2 {
+    width: 340px;
+    height: 420px; 
+}
+
+.imgn3 {
+    width: 340px;
+    height: 420px;
+}
+
+
+.item5 {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: stretch;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+.item6 {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    font-family: 'Vina Sans', cursive;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-size: 30px;
+}
+
+.item6 p {
+    /*font-family: 'Vina Sans', cursive;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 16px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .header_h1{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: gray;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .header_h1{
+        font-size: 14px;
+    }
+    .banner {
+        width: 100%;
+        height: 300px;
+    }
+}

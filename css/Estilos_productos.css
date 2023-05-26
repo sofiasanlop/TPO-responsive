@@ -1,0 +1,122 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+.grid-container {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px 300px 300px;
+    gap: 20px 10px;
+    align-content: space-between;
+    font-family: 'Cantarell', sans-serif;
+    font-family: 'Sigmar', cursive;      
+}
+
+.item {
+    background: rgb(255, 255, 255);
+    font-size: 2rem;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;    
+  
+}
+
+.articulo {
+    width: 90%;
+
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+.grid-container {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px 300px 300px;
+    gap: 20px 10px;
+    align-content:space-between;
+    margin: 5px;
+    
+}
+
+.item {
+    background: rgb(255, 255, 255);
+    font-size: 2rem;
+    display: grid;
+    justify-content: center;
+    text-align:center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+        
+}
+
+.item:hover{
+    transform: scale(1.1);
+    transition: transform .3s ;
+}
+
+.articulo {
+    width: 90%;
+    }
+
+.item a{
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    padding: 3px;
+    border-radius: 8px;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Vina Sans', cursive;
+    width: 100%;
+    }
+
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    align-items: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 952px){
+    .grid-container {
+        min-height: 300px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 300px 300px 300px;
+        gap: 10px 10px;
+        align-content:space-between;
+        margin: 5px;
+    }
+    .item a{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px){
+    .grid-container {
+        min-height: 300px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 300px 300px 300px;
+        gap: 10px 10px;
+        align-content:space-between;
+        margin: 5px;
+        
+    }
+    .item a{
+        font-size: 20px;
+    }
+}

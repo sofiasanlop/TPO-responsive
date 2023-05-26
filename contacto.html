@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagen-para-el-Logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital@0;1&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/prueba1.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <script src="js/formulario.js"></script>
+    <title>Elbow to Elbow Store-Sitio Oficial</title>
+
+</head>
+<body>
+    <div class="header">
+        <img class="header_img" src="/images/Imagen-para-el-Logo.png" alt="Imagen del logo">
+        <h1 class="header_h1">ELBOW to ELBOW <br>Store</h1>                       
+    </div>
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li class="active"><a href="index.html">INICIO</a></li>
+            <li><a href="quienes_somos.html">¿QUIENES SOMOS?</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>                
+        </ul>
+    </nav> 
+    <div class="grid_formulario">
+        <div>
+            <form class="formulario" id="my-form" onsubmit="guardarPersona(event)">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Roman"><br>
+                
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" placeholder="Riquelme"><br><br>
+                
+                <p>Sexo:</p>
+                <input type="radio" id="masculino" name="sexo" value="MASCULINO">
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" id="femenino" name="sexo" value="FEMENINO">
+                <label for="femenino">Femenino</label><br>
+                <input type="radio" id="Nodefinido" name="Sexo" value="NODEFINIDO">
+                <label for="Nobinario">No Definido</label><br><br>
+                
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="tel">Telefono:</label><br>
+                <input type="tel" id="tel" name="tel" placeholder="0261-2606-011" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}" required><br><br>
+                
+                <p>Envíe su CV aquí:</p>
+                <label for="archivo">Seleccione su archivo:</label>
+                <input type="file" id="archivo" name="archivo"><br><br>
+
+                <!-- <input type="submit" value="ENVIAR">      -->
+                <button id="my-form-button">Enviar</button>
+                <p id="my-form-status"></p>
+            </form>
+        </div>
+        <div class="imagen_form">
+            <img src="/images/Imagen-para-el-Logo.png" alt="Imagen">
+        </div> 
+    </div>  
+</body>
+<br>
+<footer>
+    <div class="footer">
+        <div class="footer-content">
+            <ul class="lista_footer">
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Cambios y devoluciones</a></li>
+                <li><a href="#">Medios de pago</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+            <div class="footer-links">
+                <div class="social-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>  
+</footer>
+</html>
