@@ -88,6 +88,8 @@
     align-items: center;
 }
 
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 952px){
@@ -119,4 +121,5 @@
     .item a{
         font-size: 20px;
     }
+    
 }
